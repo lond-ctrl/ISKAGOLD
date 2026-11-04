@@ -225,17 +225,30 @@ footer {
 @media (max-width: 600px) {
 
     .Beneficios {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        gap: 0;
+        padding: 20px 5px;
     }
 
     .Beneficio {
-        width: 100%;
-        padding: 15px;
+        flex: 1;
+        min-width: 0;
+        padding: 10px 3px;
+    }
+
+    .Beneficio i {
+        font-size: 24px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .Beneficio p {
+        font-size: 10px;
+        line-height: 1.3;
     }
 
     .Beneficio:not(:last-child) {
-        border-right: none;
-        border-bottom: 2px solid #C9A45C;
+        border-right: 1px solid #C9A45C;
+        border-bottom: none;
     }
 }
